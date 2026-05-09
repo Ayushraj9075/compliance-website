@@ -22,7 +22,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    padding: 28px 0;
 }
 
 .logo{
@@ -43,7 +43,7 @@ body{
 .nav-links{
     display: flex;
     list-style: none;
-    gap: 45px;
+    gap: 55px;
 }
 
 .nav-links a{
@@ -255,7 +255,7 @@ body{
         gap: 15px;
     } 
 
-    .nav-link.active{
+    .nav-links.active{
         display: flex;
     }
 
@@ -311,7 +311,7 @@ body{
 /* ================= MOBILE MENU ================= */
 
 .menu-toggle{
-    display: block;
+    display: none;
     font-size: 32px;
     cursor: pointer;
     color: #1d2b53;
