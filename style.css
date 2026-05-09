@@ -148,12 +148,10 @@ body{
 /* ================= WHY SECTION ================= */
 
 .why-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 100px;
+    display: block;
     padding: 120px 80px;
     background: #ffffff;
+    text-align: center;
 }
 
 .why-left{
@@ -220,6 +218,8 @@ body{
    display: flex;
    justify-content: space-between;
    align-items: center;
+   padding:20px;
+   flex-wrap: erap;
 }
 
 .nav-links{
@@ -233,6 +233,7 @@ body{
    flex-direction: column;
    gap: 15px;
    z-index:1000;
+   font-size:14px;
 }
 
 .nav-links.active{
@@ -248,7 +249,26 @@ body{
    position: relative;
    z-index: 1100;
 }
+.hero{
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
 
+.hero-left,
+.hero-right{
+    width: 100%;
+}
+
+.hero-right img{
+    width: 80%;
+    margin-top: 20px;
+}
+
+.hero-left h1{
+    font-size: 52px;
+    line-height: 1.2;
+}
     .nav-links{
         display: none;
         flex-direction: column;
@@ -285,8 +305,10 @@ body{
     }
 
     .why-section{
+        display: flex;
         flex-direction: column;
         text-align: center;
+        gap: 30px;
     }
 
     .why-left,
@@ -297,7 +319,8 @@ body{
 
     .why-left h2{
         width: 100%;
-        font-size: 42px;
+        font-size: 32px;
+        line-height:1.2;
     }
 
     .why-left img{
@@ -305,7 +328,9 @@ body{
     }
 
     .top-text{
+        width: 100;
         font-size: 18px;
+        line-height:1.2;
     }
 }
 /* ================= MOBILE MENU ================= */
