@@ -217,13 +217,46 @@ body{
 @media (max-width: 768px){
 
     .navbar{
-        flex-direction: column;
-        gap: 20px;
-    }
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav-links{
+   display: none;
+   position: absolute;
+   top: 80px;
+   right: 20px;
+   background: white;
+   padding: 20px;
+   border-radius: 10px;
+   flex-direction: column;
+   gap: 15px;
+   z-index:1000;
+}
+
+.nav-links.active{
+   display: flex;
+}
+
+.contact-btn{
+   display: none;
+}
+
+.menu-toggle{
+   display: block;
+   position: relative;
+   z-index: 1100;
+}
 
     .nav-links{
+        display: none;
         flex-direction: column;
         gap: 15px;
+    } 
+
+    .nav-link.active{
+        display: flex;
     }
 
     .hero{
@@ -237,7 +270,8 @@ body{
     }
 
     .hero-left h1{
-        font-size: 48px;
+        font-size: 38px;
+        line-height:1.2;
     }
 
     .hero-right img{
@@ -252,11 +286,13 @@ body{
 
     .why-section{
         flex-direction: column;
+        text-align: center;
     }
 
     .why-left,
     .why-right{
         width: 100%;
+        margin-top: 30px;
     }
 
     .why-left h2{
@@ -275,7 +311,7 @@ body{
 /* ================= MOBILE MENU ================= */
 
 .menu-toggle{
-    display: none;
+    display: block;
     font-size: 32px;
     cursor: pointer;
     color: #1d2b53;
@@ -306,6 +342,10 @@ body{
 
     .menu-toggle{
         display: block;
+        font-size: 32px;
+        cursor: pointer;
+        color: #1d2b53;
+        margin-left: auto;
     }
 
     .nav-links{
