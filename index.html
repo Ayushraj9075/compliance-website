@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Compliance Website</title>
 
     <link rel="stylesheet" href="style.css">
@@ -12,110 +11,141 @@
 
 <body>
 
-    <!-- NAVBAR -->
+    <div class="container">
 
-    <nav class="navbar">
+        <!-- ================= NAVBAR ================= -->
 
-        <h2 class="logo">Logo</h2>
+        <nav class="navbar">
 
-        <ul class="nav-links">
+            <div class="logo">
+                <img src="images/OBJECTS.png" alt="Logo">
+                <h2>Logo</h2>
+            </div>
+            <div class="menu-toggle"
+             id="menu-toggle">
+              ☰
+              </div>
+            <ul class="nav-links" id="nav-links">
 
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Our Services</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact</a></li>
+                <li><a href="#">Home</a></li>
 
-        </ul>
+                <li><a href="#">About Us</a></li>
 
-        <button class="contact-btn">
-            Contact Us
-        </button>
+                <li><a href="#">Our Services</a></li>
 
-    </nav>
+                <li><a href="#">Pricing</a></li>
 
-    <!-- HERO SECTION -->
+                <li><a href="#">FAQ</a></li>
 
-    <section class="hero">
-
-        <div class="hero-text">
-
-            <h1>
-                Simplifying
-                <span>Compliance</span>
-                For Research Analysts
-            </h1>
-
-            <p>
-                Stay focused on your insights—we’ll handle the compliance. Our expert solutions ensure your research practices meet every regulatory requirement with confidence and ease
-            </p>
-
-            <ul class="hero-list">
-
-                <li>End-To-End Compliance Support</li>
-
-                <li>Regulatory Filings Made Simple</li>
-
-                <li>Tailored Solutions For Independent Analysts & Firms</li>
+                <li><a href="#">Contact</a></li>
 
             </ul>
 
-            <div class="hero-buttons">
+            <a href="#" class="contact-btn">
+                Contact Us
+            </a>
 
-                <button class="primary-btn">
-                    Get Started
-                </button>
+        </nav>
 
-                <button class="secondary-btn">
-                    Book A Consultation
-                </button>
+
+
+
+
+        <!-- ================= HERO SECTION ================= -->
+
+        <section class="hero">
+
+            <!-- LEFT -->
+
+            <div class="hero-left">
+
+                <h1>
+                    Simplifying <br>
+
+                    <span>compliance</span> For <br> 
+                    Research Analysts
+                    
+                </h1>
+
+                <p>
+                    Stay Focused On Your Insights—We’ll Handle The Compliance.
+                    Our Expert Solutions Ensure Your Research Practices Meet
+                    Every Regulatory Requirement With Confidence And Ease
+                </p>
+
+                <ul class="features">
+
+                    <li>✔ End-To-End Compliance Support</li>
+
+                    <li>✔ Regulatory Filings Made Simple</li>
+
+                    <li>✔ Tailored Solutions For Independent Analysts & Firms</li>
+
+                </ul>
+
+                <div class="hero-buttons">
+                    <a href="#"  class="btn-primary">
+                        Get Started
+                    </a>
+
+                    <a href="#" class="btn-secondary">
+                    Book A Consulation
+                    </a>
+
+                </div>
 
             </div>
 
-        </div>
+            <!-- RIGHT -->
 
-        <div class="hero-image">
+            <div class="hero-right">
 
-            <img src="Group 21.png" alt="">
-
-        </div>
-
-    </section>
-
-    <!-- SECOND SECTION -->
-
-    <section class="info-section">
-
-        <div class="info-heading">
-
-            <h2>
-                Why Compliance Matters
-                For Research Analysts
-            </h2>
-
-            <p>
-                In today’s regulatory environment, even a small oversight can lead to penalties, reputational risks, and loss of client trust. We help Research Analysts and firms navigate complex compliance requirements so they can focus on delivering high-quality research without worry..
-            </p>
-
-        </div>
-
-        <div class="info-content">
-
-            <div class="info-image">
-
-                <img src="Group 12.png" alt="">
+                <img src="images/Group 21.png" alt="Hero Image">
 
             </div>
 
-            <div class="info-text">
+        </section>
+
+
+
+
+
+        <!-- ================= WHY SECTION ================= -->
+
+        <section class="why-section">
+
+            <!-- LEFT -->
+
+            <div class="why-left">
+
+                <h2>
+                    Why <span>Compliance Matters</span><br>
+                    For Research Analysts
+                </h2>
+
+                <img src="images/Group 12.png" alt="Why Compliance">
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="why-right">
+
+                <p class="top-text">
+                    In Today’s Regulatory Environment, Even A Small Oversight
+                    Can Lead To Penalties, Reputational Risks, And Loss Of
+                    Client Trust. We Help Research Analysts And Firms Navigate
+                    Complex Compliance Requirements So They Can Focus On
+                    Delivering High-Quality Research Without Worry.
+                </p>
 
                 <div class="info-box">
 
                     <h3>Regulatory Clarity</h3>
 
                     <p>
-                        We decode complex compliance rules into simple actionable steps.
+                        We Decode Complex Compliance Rules Into
+                        Simple, Actionable Steps.
                     </p>
 
                 </div>
@@ -125,7 +155,8 @@
                     <h3>Hassle-Free Filings Clarity</h3>
 
                     <p>
-                        From registration to ongoing reporting — we manage it end to end.
+                        From Registration To Ongoing Reporting—
+                        We Manage It End-To-End.
                     </p>
 
                 </div>
@@ -135,17 +166,27 @@
                     <h3>Risk Protection</h3>
 
                     <p>
-                        Stay ahead of audits, inspections, and compliance gaps with proactive support.
+                        Stay Ahead Of Audits, Inspections,
+                        And Compliance Gaps With Proactive Support.
                     </p>
 
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
+    </div>
+<script>
 
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.onclick = function () {
+    navLinks.classList.toggle("active");
+};
+
+</script>
 </body>
 
 </html>
